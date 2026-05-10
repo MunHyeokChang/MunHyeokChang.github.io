@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Mun Hyeok Chang</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container nav-container">
+      <a class="name" href="index.html">Mun Hyeok Chang</a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="publications.html">Publications</a>
+        <a href="resume.html">Resume / CV</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-title">
+      <div class="container">
+        <h1>Projects</h1>
+        <p>
+          Selected robotics and mechatronics projects, including soft locomotion robots,
+          prosthetic hands, tendon-driven mechanisms, and robotic hand platforms.
+        </p>
+      </div>
+    </section>
+
+    <section class="section gray">
+      <div class="container">
+
+        <div id="loco-sheet" class="project-card">
+          <div class="project-header">
+            <div>
+              <h3>Loco-sheet: Morphing Inchworm Robot Across Rough Terrain</h3>
+              <p class="project-meta">2017–2019 · Soft Robotics · Morphing Locomotion · RoboSoft Competition</p>
+            </div>
+          </div>
+
+          <p>
+            Loco-sheet is a flexible sheet-based soft locomotion robot developed to traverse rough and constrained environments,
+            including flat ground, stairs, and low-clearance spaces. The robot uses a tendon-driven flexible PVC sheet body
+            that reversibly morphs between S-shaped and omega-shaped locomotion modes.
+          </p>
+
+          <h4>Project Overview</h4>
+          <p>
+            The central idea of this project was to use the bending stiffness of a flexible sheet as a functional locomotion
+            element rather than treating the body as a passive structure. By folding and unfolding the sheet with a motor-tendon
+            actuation system, the robot could change its body shape and generate different locomotion behaviors for different terrains.
+          </p>
+
+          <h4>Locomotion Modes</h4>
+          <ul>
+            <li>
+              <strong>S-shaped locomotion:</strong> The robot morphs into an S-shape and uses the bending stiffness of the
+              flexible sheet to lift its center of mass upward, enabling it to climb discrete high terrain such as stairs.
+            </li>
+            <li>
+              <strong>Omega-shaped locomotion:</strong> The robot unfolds into an omega-like shape and performs two-anchor
+              crawling to move through low-clearance spaces.
+            </li>
+            <li>
+              <strong>Turning motion:</strong> The robot generates turning behavior by asymmetrically folding and unfolding
+              one side of the sheet while maintaining a folded configuration.
+            </li>
+          </ul>
+
+          <h4>Mechanical Design</h4>
+          <ul>
+            <li>
+              Designed a morphing body using three layers of 0.5 mm PVC sheets to provide sufficient bending stiffness for
+              lifting the robot's center of mass.
+            </li>
+            <li>
+              Used a motor-tendon actuation system to fold the flexible sheet while allowing elastic unfolding when the tendon
+              was released.
+            </li>
+            <li>
+              Integrated anisotropic friction wheels based on one-way clutches to enable slip-reduced two-anchor crawling in
+              omega-shaped locomotion.
+            </li>
+            <li>
+              Distributed the control board, actuators, and battery along the sheet body to support stable crawling behavior.
+            </li>
+          </ul>
+
+          <h4>My Contributions</h4>
+          <ul>
+            <li>Proposed the main hardware concept of the flexible sheet-based locomotion robot body.</li>
+            <li>Designed and fabricated the robot hardware using SOLIDWORKS and laser-cut components.</li>
+            <li>Implemented the tendon-driven actuation mechanism for sheet folding and unfolding.</li>
+            <li>Designed and fabricated the PCB for the robot system.</li>
+            <li>Implemented Arduino-based motor position control and wireless control.</li>
+            <li>Participated in system integration, testing, and RoboSoft competition preparation.</li>
+          </ul>
+
+          <h4>Technical Skills</h4>
+          <div class="tags">
+            <span>SOLIDWORKS</span>
+            <span>Soft Robotics</span>
+            <span>Morphing Mechanism</span>
+            <span>Tendon-driven Actuation</span>
+            <span>Arduino</span>
+            <span>Motor Position Control</span>
+            <span>PCB Design</span>
+            <span>Wireless Control</span>
+            <span>Laser Cutting</span>
+            <span>Motion Analysis</span>
+          </div>
+
+          <h4>Results</h4>
+          <ul>
+            <li>Demonstrated fully untethered locomotion using onboard motors, electronics, and battery.</li>
+            <li>Climbed stairs up to 90 mm in height using S-shaped locomotion.</li>
+            <li>Passed through low-clearance gaps down to 72 mm using omega-shaped locomotion.</li>
+            <li>Achieved flat-ground locomotion speeds of 22 mm/s in S-shaped mode and 18 mm/s in omega-shaped mode.</li>
+            <li>Achieved 2nd place in the RoboSoft 2018 Locomotion Competition.</li>
+            <li>Achieved 1st place in the RoboSoft 2019 Locomotion Competition.</li>
+            <li>Presented at IEEE RoboSoft and selected as a conference finalist.</li>
+          </ul>
+
+          <p class="link-line">
+            Publication:
+            <a href="#" target="_blank">
+              Loco-sheet: Morphing Inchworm Robot Across Rough-terrain
+            </a>
+          </p>
+        </div>
+
+        <div id="sports-hand" class="project-card">
+          <div class="project-header">
+            <div>
+              <h3>Anthropomorphic Prosthetic Hand for Sports Swing Activities</h3>
+              <p class="project-meta">2017–2021 · Prosthetic Hand · Tendon-driven Mechanism · Power Squeeze Grip</p>
+            </div>
+          </div>
+
+          <p>
+            This project developed an anthropomorphic prosthetic hand designed for sports activities that involve
+            high-speed swinging and high-impact object interaction. The hand was designed to hold a golf club
+            diagonally using a stable power squeeze grip, inspired by anatomical features of the human hand.
+          </p>
+
+          <h4>Project Overview</h4>
+          <p>
+            Conventional prosthetic hands are often designed for activities of daily living, but sports activities
+            such as golf, tennis, baseball, and fishing require stable grasping under high-speed and high-impact
+            conditions. In this project, the hand design focused on reproducing key anatomical functions of the
+            human hand that contribute to efficient swinging: palm concavity, diagonal club grasping, and increased
+            finger stiffness against impact.
+          </p>
+
+          <h4>Hand Design</h4>
+          <ul>
+            <li>
+              <strong>Articulated palm:</strong> Designed 2-DOF CMC joints for the fourth and fifth fingers to reproduce
+              flexion and supination of the metacarpal bones, enabling palm concavity for diagonal club grasping.
+            </li>
+            <li>
+              <strong>Power squeeze grip:</strong> Enabled the fingers, palm, and thumb to wrap around a diagonally placed
+              club, improving grasp stability during swing impact.
+            </li>
+            <li>
+              <strong>FDP/FDS-inspired tendon routing:</strong> Designed tendon paths inspired by human finger flexor tendons
+              to actuate finger joints and reinforce grasping against external forces.
+            </li>
+            <li>
+              <strong>2-DOF underactuated finger joints:</strong> Designed CMC and MCP joint mechanisms that allow the fingers
+              to adapt to the club surface while maintaining compact mechanical structure.
+            </li>
+            <li>
+              <strong>Differential actuation system:</strong> Implemented a compact tendon actuation system to drive multiple
+              finger tendons with fewer actuators while allowing adaptive force distribution among fingers.
+            </li>
+          </ul>
+
+          <h4>My Contributions</h4>
+          <ul>
+            <li>Designed the anthropomorphic prosthetic hand mechanism focused on diagonal power squeeze grip.</li>
+            <li>Developed the articulated palm structure using 2-DOF CMC joints for the fourth and fifth fingers.</li>
+            <li>Designed the tendon routing for FDP/FDS-inspired finger actuation.</li>
+            <li>Implemented the differential actuation mechanism for underactuated finger control.</li>
+            <li>Built and integrated the prosthetic hand prototype for grasping and impact experiments.</li>
+            <li>Contributed to experimental validation of grasp pressure distribution and grasp resilience under impact.</li>
+          </ul>
+
+          <h4>Technical Skills</h4>
+          <div class="tags">
+            <span>Anthropomorphic Hand Design</span>
+            <span>Prosthetic Hand</span>
+            <span>Tendon-driven Mechanism</span>
+            <span>Underactuated Mechanism</span>
+            <span>Differential Actuation</span>
+            <span>2-DOF Joint Design</span>
+            <span>CMC Joint Mechanism</span>
+            <span>FDP/FDS Tendon Routing</span>
+            <span>Mechanical Prototyping</span>
+            <span>SOLIDWORKS</span>
+            <span>Embedded Motor Control</span>
+            <span>Pressure Measurement</span>
+            <span>Impact Testing</span>
+          </div>
+
+          <h4>Results</h4>
+          <ul>
+            <li>Achieved palm concavity using articulated fourth and fifth CMC joints for diagonal club grasping.</li>
+            <li>Enabled all fingers, including the ring and little fingers, to contribute to power squeeze grip.</li>
+            <li>Increased pressure on the ulnar side of the hand compared with a non-articulated palm design.</li>
+            <li>Improved grasp resilience against impact in palmar, ulnar, and radial directions.</li>
+            <li>Demonstrated stable club holding under high-speed swing and impact conditions.</li>
+          </ul>
+
+          <p class="link-line">
+            Publication:
+            <a href="#" target="_blank">
+              Anthropomorphic Prosthetic Hand Inspired by Efficient Swing Mechanics for Sports Activities
+            </a>
+          </p>
+        </div>
+
+        <div class="project-card placeholder">
+          <h3>Underactuated Anthropomorphic Robotic Hand Platform</h3>
+          <p>
+            Coming soon. This section will summarize my Ph.D. research on robotic hand mechanisms,
+            actuation, embedded control, and experimental validation.
+          </p>
+        </div>
+
+        <div class="project-card placeholder">
+          <h3>Thumb-Finger Actuation Order Control Mechanism</h3>
+          <p>
+            Coming soon. This section will describe a passive mechanism that switches actuation order
+            between tip pinch and lateral pinch through thumb position.
+          </p>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      © 2026 Mun Hyeok Chang
+    </div>
+  </footer>
+</body>
+</html>
