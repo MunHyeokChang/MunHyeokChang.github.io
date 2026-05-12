@@ -417,3 +417,32 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
+.home-contact {
+  margin-top: 26px;
+  padding-top: 18px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.home-contact p {
+  margin: 6px 0;
+  color: #374151;
+}
+
+.home-contact a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.home-contact a:hover {
+  text-decoration: underline;
+}
+
+.hero-card a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.hero-card a:hover {
+  text-decoration: underline;
+}
