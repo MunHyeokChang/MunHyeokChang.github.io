@@ -446,3 +446,20 @@ footer {
 .hero-card a:hover {
   text-decoration: underline;
 }
+
+/* About page: centered single-column layout */
+.about-layout {
+  display: block;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.about-main {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.about-block {
+  width: 100%;
+}
