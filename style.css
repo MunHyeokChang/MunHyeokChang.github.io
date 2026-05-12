@@ -267,3 +267,153 @@ footer {
     font-size: 2.4rem;
   }
 }
+
+.about-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 280px;
+  gap: 32px;
+  align-items: start;
+}
+
+.about-main {
+  min-width: 0;
+}
+
+.about-block {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 28px;
+  margin-bottom: 24px;
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.04);
+}
+
+.about-block h2 {
+  margin-top: 0;
+  margin-bottom: 18px;
+  font-size: 1.5rem;
+}
+
+.about-block h3 {
+  margin-bottom: 6px;
+}
+
+.section-note {
+  color: #6b7280;
+  margin-top: -8px;
+  margin-bottom: 20px;
+}
+
+.cv-item {
+  display: grid;
+  grid-template-columns: 160px minmax(0, 1fr);
+  gap: 22px;
+  padding: 18px 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.cv-item:last-child {
+  border-bottom: none;
+}
+
+.cv-item.compact {
+  padding: 12px 0;
+}
+
+.cv-date {
+  color: #6b7280;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.cv-content h3 {
+  margin: 0 0 6px;
+  font-size: 1.05rem;
+}
+
+.cv-content p {
+  margin: 3px 0;
+  color: #374151;
+}
+
+.cv-content ul {
+  margin: 8px 0 0;
+  padding-left: 20px;
+}
+
+.cv-content li {
+  margin-bottom: 6px;
+}
+
+.subheading {
+  margin-top: 22px;
+  color: #111827;
+}
+
+.publication-list {
+  padding-left: 22px;
+}
+
+.publication-list li {
+  margin-bottom: 12px;
+  line-height: 1.55;
+}
+
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.skill-grid > div {
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 18px;
+  background: #f9fafb;
+}
+
+.skill-grid h3 {
+  margin-top: 0;
+}
+
+.skill-grid ul {
+  margin-bottom: 0;
+  padding-left: 20px;
+}
+
+.about-sidebar {
+  position: sticky;
+  top: 96px;
+}
+
+.sidebar-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 22px;
+  margin-bottom: 20px;
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.04);
+}
+
+.sidebar-card h3 {
+  margin-top: 0;
+}
+
+@media (max-width: 900px) {
+  .about-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .about-sidebar {
+    position: static;
+  }
+
+  .cv-item {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+
+  .skill-grid {
+    grid-template-columns: 1fr;
+  }
+}
