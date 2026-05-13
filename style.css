@@ -645,3 +645,10 @@ html {
 .publication-links a:hover {
   text-decoration: underline;
 }
+
+.publication-note {
+  color: #6b7280;
+  font-size: 0.95rem;
+  margin-top: -6px;
+  margin-bottom: 24px;
+}
