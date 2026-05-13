@@ -463,3 +463,70 @@ footer {
 .about-block {
   width: 100%;
 }
+
+.project-index-section {
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.project-index-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 20px;
+}
+
+.project-index-card {
+  display: block;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 22px;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.04);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.project-index-card:hover {
+  transform: translateY(-3px);
+  border-color: #2563eb;
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.08);
+}
+
+.project-index-card h3 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  color: #111827;
+  font-size: 1.05rem;
+}
+
+.project-index-card p {
+  margin-bottom: 0;
+  color: #4b5563;
+  line-height: 1.5;
+}
+
+.back-to-index {
+  margin-top: 24px;
+}
+
+.back-to-index a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.back-to-index a:hover {
+  text-decoration: underline;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 800px) {
+  .project-index-grid {
+    grid-template-columns: 1fr;
+  }
+}
