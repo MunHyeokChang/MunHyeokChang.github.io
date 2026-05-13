@@ -547,3 +547,18 @@ html {
   background: #000;
   box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
 }
+
+.project-video {
+  width: 100%;
+  margin: 20px 0 28px;
+}
+
+.project-video iframe {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
+  border-radius: 16px;
+  background: #000;
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
+}
